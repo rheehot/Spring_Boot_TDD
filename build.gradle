@@ -13,10 +13,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	compile("org.springframework.boot:spring-boot-starter-web")
-	testCompile("org.springframework.boot:spring-boot-starter-test")
+	implementation('org.springframework.boot:spring-boot-starter')
+	implementation('org.springframework.boot:spring-boot-starter-web')
 
+	// Test dependencies
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude module: 'junit'
 	}
